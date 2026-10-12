@@ -1,0 +1,590 @@
+{
+ "q1_sizes": {
+  "train": 125,
+  "val": 27,
+  "test": 26
+ },
+ "q1_class_counts": {
+  "train": [
+   41,
+   50,
+   34
+  ],
+  "val": [
+   9,
+   11,
+   7
+  ],
+  "test": [
+   9,
+   10,
+   7
+  ]
+ },
+ "q1_ranges": [
+  {
+   "feature": "alcohol",
+   "min": 11.03,
+   "max": 14.83,
+   "range (max-min)": 3.8
+  },
+  {
+   "feature": "malic_acid",
+   "min": 0.74,
+   "max": 5.8,
+   "range (max-min)": 5.06
+  },
+  {
+   "feature": "ash",
+   "min": 1.36,
+   "max": 3.23,
+   "range (max-min)": 1.87
+  },
+  {
+   "feature": "alcalinity_of_ash",
+   "min": 10.6,
+   "max": 30.0,
+   "range (max-min)": 19.4
+  },
+  {
+   "feature": "magnesium",
+   "min": 70.0,
+   "max": 162.0,
+   "range (max-min)": 92.0
+  },
+  {
+   "feature": "total_phenols",
+   "min": 0.98,
+   "max": 3.88,
+   "range (max-min)": 2.9
+  },
+  {
+   "feature": "flavanoids",
+   "min": 0.34,
+   "max": 5.08,
+   "range (max-min)": 4.74
+  },
+  {
+   "feature": "nonflavanoid_phenols",
+   "min": 0.13,
+   "max": 0.66,
+   "range (max-min)": 0.53
+  },
+  {
+   "feature": "proanthocyanins",
+   "min": 0.41,
+   "max": 3.58,
+   "range (max-min)": 3.17
+  },
+  {
+   "feature": "color_intensity",
+   "min": 1.28,
+   "max": 13.0,
+   "range (max-min)": 11.72
+  },
+  {
+   "feature": "hue",
+   "min": 0.48,
+   "max": 1.71,
+   "range (max-min)": 1.23
+  },
+  {
+   "feature": "od280/od315_of_diluted_wines",
+   "min": 1.27,
+   "max": 4.0,
+   "range (max-min)": 2.73
+  },
+  {
+   "feature": "proline",
+   "min": 278.0,
+   "max": 1680.0,
+   "range (max-min)": 1402.0
+  }
+ ],
+ "q1_sk_agree_k5": true,
+ "q1_sk_agree_all": true,
+ "q1_val_ties_k5": 0,
+ "q1_sweep_scaled": {
+  "K": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25
+  ],
+  "train": [
+   1.0,
+   1.0,
+   0.984,
+   0.992,
+   0.984,
+   0.984,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.976,
+   0.968,
+   0.976,
+   0.968,
+   0.968,
+   0.968,
+   0.968,
+   0.968
+  ],
+  "val": [
+   0.9259,
+   0.9259,
+   0.8889,
+   0.9259,
+   0.8889,
+   0.9259,
+   0.9259,
+   0.9259,
+   0.9259,
+   0.9259,
+   0.9259,
+   0.9259,
+   0.963,
+   0.963,
+   0.963,
+   0.963,
+   0.963,
+   0.963,
+   0.963,
+   0.963,
+   1.0,
+   0.963,
+   0.963,
+   0.9259,
+   0.963
+  ]
+ },
+ "q1_K_sel": 21,
+ "q1_K_tied": [
+  21
+ ],
+ "q1_sweep_unscaled": {
+  "train": [
+   1.0,
+   1.0,
+   0.88,
+   0.88,
+   0.84,
+   0.84,
+   0.784,
+   0.792,
+   0.792,
+   0.768,
+   0.744,
+   0.744,
+   0.736,
+   0.768,
+   0.752,
+   0.744,
+   0.736,
+   0.752,
+   0.752,
+   0.744,
+   0.728,
+   0.744,
+   0.728,
+   0.744,
+   0.752
+  ],
+  "val": [
+   0.6667,
+   0.6667,
+   0.6296,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6296,
+   0.6667,
+   0.6667,
+   0.7037,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.7037,
+   0.7037
+  ],
+  "val_proline": [
+   0.7037,
+   0.7037,
+   0.6667,
+   0.6667,
+   0.6296,
+   0.6667,
+   0.5926,
+   0.7037,
+   0.6667,
+   0.7037,
+   0.7037,
+   0.7037,
+   0.6667,
+   0.7037,
+   0.7037,
+   0.7037,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667,
+   0.6667
+  ]
+ },
+ "q1_mean_val": {
+  "scaled": 0.9422,
+  "unscaled": 0.6681,
+  "proline": 0.6756
+ },
+ "q1_dominance": [
+  {
+   "feature": "proline",
+   "train std": 305.777,
+   "share of squared Euclidean distance (%)": 99.733,
+   "share of std, ~Manhattan (%)": 92.09
+  },
+  {
+   "feature": "magnesium",
+   "train std": 15.149,
+   "share of squared Euclidean distance (%)": 0.245,
+   "share of std, ~Manhattan (%)": 4.56
+  },
+  {
+   "feature": "alcalinity_of_ash",
+   "train std": 3.393,
+   "share of squared Euclidean distance (%)": 0.012,
+   "share of std, ~Manhattan (%)": 1.02
+  },
+  {
+   "feature": "color_intensity",
+   "train std": 2.383,
+   "share of squared Euclidean distance (%)": 0.006,
+   "share of std, ~Manhattan (%)": 0.72
+  },
+  {
+   "feature": "alcohol",
+   "train std": 0.806,
+   "share of squared Euclidean distance (%)": 0.001,
+   "share of std, ~Manhattan (%)": 0.24
+  }
+ ],
+ "q1_long": {
+  "1": [
+   1.0,
+   0.9259
+  ],
+  "25": [
+   0.968,
+   0.963
+  ],
+  "50": [
+   0.976,
+   0.963
+  ],
+  "75": [
+   0.944,
+   0.963
+  ],
+  "90": [
+   0.752,
+   0.6296
+  ],
+  "100": [
+   0.496,
+   0.4444
+  ],
+  "110": [
+   0.4,
+   0.4074
+  ],
+  "125": [
+   0.4,
+   0.4074
+  ]
+ },
+ "q1_majority_share": 0.4,
+ "q1_long_min25_75": 0.9259,
+ "q1_long_first_below_09": 81,
+ "q1_table": [
+  {
+   "metric": "Euclidean",
+   "Uniform voting": 1.0,
+   "Inverse-distance voting": 1.0
+  },
+  {
+   "metric": "Manhattan",
+   "Uniform voting": 0.963,
+   "Inverse-distance voting": 0.963
+  }
+ ],
+ "q1_ties_table": {
+  "euclidean/uniform": 1,
+  "euclidean/distance": 0,
+  "manhattan/uniform": 1,
+  "manhattan/distance": 0
+ },
+ "q1_best": [
+  "euclidean",
+  "distance"
+ ],
+ "q1_test_acc": 1.0,
+ "q1_conf": [
+  [
+   9,
+   0,
+   0
+  ],
+  [
+   0,
+   10,
+   0
+  ],
+  [
+   0,
+   0,
+   7
+  ]
+ ],
+ "q1_prec": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "q1_rec": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "q1_test_lower95": 0.868,
+ "q1_timing": {
+  "ours": 0.15,
+  "sk_auto": 0.353,
+  "sk_brute": 5.893,
+  "sk_auto_method": "kd_tree"
+ },
+ "q2a_table": [
+  {
+   "K": 1,
+   "train MSE": 0.0,
+   "val MSE": 0.1384
+  },
+  {
+   "K": 3,
+   "train MSE": 0.0675,
+   "val MSE": 0.0842
+  },
+  {
+   "K": 5,
+   "train MSE": 0.0783,
+   "val MSE": 0.066
+  },
+  {
+   "K": 10,
+   "train MSE": 0.0876,
+   "val MSE": 0.059
+  },
+  {
+   "K": 20,
+   "train MSE": 0.0954,
+   "val MSE": 0.0588
+  },
+  {
+   "K": 50,
+   "train MSE": 0.1371,
+   "val MSE": 0.1112
+  },
+  {
+   "K": 100,
+   "train MSE": 0.1873,
+   "val MSE": 0.1571
+  },
+  {
+   "K": 180,
+   "train MSE": 0.5919,
+   "val MSE": 0.5187
+  }
+ ],
+ "q2a_K_sel": 20,
+ "q2a_test_mse": 0.1182,
+ "q2a_oracle": {
+  "train": 0.0932,
+  "val": 0.0543,
+  "test": 0.1061
+ },
+ "q2a_var_ytr": 0.5919,
+ "q2b": [
+  {
+   "d": 1,
+   "median ratio": 1855.3244,
+   "median d_min": 0.0004,
+   "median d_max": 0.7671,
+   "mean distance": 0.34,
+   "sqrt(d/6)": 0.4082
+  },
+  {
+   "d": 2,
+   "median ratio": 83.9397,
+   "median d_min": 0.0136,
+   "median d_max": 1.0924,
+   "mean distance": 0.5387,
+   "sqrt(d/6)": 0.5774
+  },
+  {
+   "d": 5,
+   "median ratio": 7.1744,
+   "median d_min": 0.1799,
+   "median d_max": 1.4611,
+   "mean distance": 0.869,
+   "sqrt(d/6)": 0.9129
+  },
+  {
+   "d": 10,
+   "median ratio": 2.9247,
+   "median d_min": 0.4952,
+   "median d_max": 1.8944,
+   "mean distance": 1.2521,
+   "sqrt(d/6)": 1.291
+  },
+  {
+   "d": 20,
+   "median ratio": 1.3732,
+   "median d_min": 1.0249,
+   "median d_max": 2.4538,
+   "mean distance": 1.8095,
+   "sqrt(d/6)": 1.8257
+  },
+  {
+   "d": 50,
+   "median ratio": 0.6664,
+   "median d_min": 2.1258,
+   "median d_max": 3.5516,
+   "mean distance": 2.877,
+   "sqrt(d/6)": 2.8868
+  },
+  {
+   "d": 100,
+   "median ratio": 0.4312,
+   "median d_min": 3.3278,
+   "median d_max": 4.7697,
+   "mean distance": 4.0813,
+   "sqrt(d/6)": 4.0825
+  },
+  {
+   "d": 500,
+   "median ratio": 0.1716,
+   "median d_min": 8.4204,
+   "median d_max": 9.8464,
+   "mean distance": 9.1363,
+   "sqrt(d/6)": 9.1287
+  },
+  {
+   "d": 1000,
+   "median ratio": 0.1187,
+   "median d_min": 12.1865,
+   "median d_max": 13.6201,
+   "mean distance": 12.8941,
+   "sqrt(d/6)": 12.9099
+  }
+ ],
+ "q2c": [
+  {
+   "m (noise features)": 0,
+   "K all": 30,
+   "test acc KNN all": 0.9833,
+   "K informative": 30,
+   "test acc KNN 2 informative": 0.9833,
+   "test acc LogReg all": 0.98
+  },
+  {
+   "m (noise features)": 2,
+   "K all": 8,
+   "test acc KNN all": 0.97,
+   "K informative": 7,
+   "test acc KNN 2 informative": 0.9833,
+   "test acc LogReg all": 0.9733
+  },
+  {
+   "m (noise features)": 5,
+   "K all": 30,
+   "test acc KNN all": 0.9633,
+   "K informative": 13,
+   "test acc KNN 2 informative": 0.98,
+   "test acc LogReg all": 0.9733
+  },
+  {
+   "m (noise features)": 10,
+   "K all": 26,
+   "test acc KNN all": 0.9633,
+   "K informative": 19,
+   "test acc KNN 2 informative": 0.9833,
+   "test acc LogReg all": 0.9733
+  },
+  {
+   "m (noise features)": 20,
+   "K all": 20,
+   "test acc KNN all": 0.93,
+   "K informative": 15,
+   "test acc KNN 2 informative": 0.98,
+   "test acc LogReg all": 0.9533
+  },
+  {
+   "m (noise features)": 50,
+   "K all": 26,
+   "test acc KNN all": 0.8533,
+   "K informative": 23,
+   "test acc KNN 2 informative": 0.9833,
+   "test acc LogReg all": 0.9733
+  },
+  {
+   "m (noise features)": 100,
+   "K all": 26,
+   "test acc KNN all": 0.7867,
+   "K informative": 7,
+   "test acc KNN 2 informative": 0.9767,
+   "test acc LogReg all": 0.95
+  }
+ ]
+}
