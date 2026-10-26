@@ -102,8 +102,6 @@
   }
  ],
  "q1_sk_agree_k5": true,
- "q1_sk_agree_all": true,
- "q1_val_ties_k5": 0,
  "q1_sweep_scaled": {
   "K": [
    1,
@@ -192,33 +190,6 @@
   21
  ],
  "q1_sweep_unscaled": {
-  "train": [
-   1.0,
-   1.0,
-   0.88,
-   0.88,
-   0.84,
-   0.84,
-   0.784,
-   0.792,
-   0.792,
-   0.768,
-   0.744,
-   0.744,
-   0.736,
-   0.768,
-   0.752,
-   0.744,
-   0.736,
-   0.752,
-   0.752,
-   0.744,
-   0.728,
-   0.744,
-   0.728,
-   0.744,
-   0.752
-  ],
   "val": [
    0.6667,
    0.6667,
@@ -245,109 +216,39 @@
    0.6667,
    0.7037,
    0.7037
-  ],
-  "val_proline": [
-   0.7037,
-   0.7037,
-   0.6667,
-   0.6667,
-   0.6296,
-   0.6667,
-   0.5926,
-   0.7037,
-   0.6667,
-   0.7037,
-   0.7037,
-   0.7037,
-   0.6667,
-   0.7037,
-   0.7037,
-   0.7037,
-   0.6667,
-   0.6667,
-   0.6667,
-   0.6667,
-   0.6667,
-   0.6667,
-   0.6667,
-   0.6667,
-   0.6667
   ]
  },
  "q1_mean_val": {
   "scaled": 0.9422,
-  "unscaled": 0.6681,
-  "proline": 0.6756
+  "unscaled": 0.6681
  },
  "q1_dominance": [
   {
    "feature": "proline",
    "train std": 305.777,
-   "share of squared Euclidean distance (%)": 99.733,
-   "share of std, ~Manhattan (%)": 92.09
+   "share of squared Euclidean distance (%)": 99.733
   },
   {
    "feature": "magnesium",
    "train std": 15.149,
-   "share of squared Euclidean distance (%)": 0.245,
-   "share of std, ~Manhattan (%)": 4.56
+   "share of squared Euclidean distance (%)": 0.245
   },
   {
    "feature": "alcalinity_of_ash",
    "train std": 3.393,
-   "share of squared Euclidean distance (%)": 0.012,
-   "share of std, ~Manhattan (%)": 1.02
+   "share of squared Euclidean distance (%)": 0.012
   },
   {
    "feature": "color_intensity",
    "train std": 2.383,
-   "share of squared Euclidean distance (%)": 0.006,
-   "share of std, ~Manhattan (%)": 0.72
+   "share of squared Euclidean distance (%)": 0.006
   },
   {
    "feature": "alcohol",
    "train std": 0.806,
-   "share of squared Euclidean distance (%)": 0.001,
-   "share of std, ~Manhattan (%)": 0.24
+   "share of squared Euclidean distance (%)": 0.001
   }
  ],
- "q1_long": {
-  "1": [
-   1.0,
-   0.9259
-  ],
-  "25": [
-   0.968,
-   0.963
-  ],
-  "50": [
-   0.976,
-   0.963
-  ],
-  "75": [
-   0.944,
-   0.963
-  ],
-  "90": [
-   0.752,
-   0.6296
-  ],
-  "100": [
-   0.496,
-   0.4444
-  ],
-  "110": [
-   0.4,
-   0.4074
-  ],
-  "125": [
-   0.4,
-   0.4074
-  ]
- },
- "q1_majority_share": 0.4,
- "q1_long_min25_75": 0.9259,
- "q1_long_first_below_09": 81,
  "q1_table": [
   {
    "metric": "Euclidean",
@@ -360,12 +261,6 @@
    "Inverse-distance voting": 0.963
   }
  ],
- "q1_ties_table": {
-  "euclidean/uniform": 1,
-  "euclidean/distance": 0,
-  "manhattan/uniform": 1,
-  "manhattan/distance": 0
- },
  "q1_best": [
   "euclidean",
   "distance"
@@ -400,10 +295,8 @@
  ],
  "q1_test_lower95": 0.868,
  "q1_timing": {
-  "ours": 0.15,
-  "sk_auto": 0.353,
-  "sk_brute": 5.893,
-  "sk_auto_method": "kd_tree"
+  "ours": 0.201,
+  "sklearn": 0.522
  },
  "q2a_table": [
   {
@@ -454,79 +347,60 @@
   "val": 0.0543,
   "test": 0.1061
  },
- "q2a_var_ytr": 0.5919,
  "q2b": [
   {
    "d": 1,
    "median ratio": 1855.3244,
    "median d_min": 0.0004,
-   "median d_max": 0.7671,
-   "mean distance": 0.34,
-   "sqrt(d/6)": 0.4082
+   "median d_max": 0.7671
   },
   {
    "d": 2,
    "median ratio": 83.9397,
    "median d_min": 0.0136,
-   "median d_max": 1.0924,
-   "mean distance": 0.5387,
-   "sqrt(d/6)": 0.5774
+   "median d_max": 1.0924
   },
   {
    "d": 5,
    "median ratio": 7.1744,
    "median d_min": 0.1799,
-   "median d_max": 1.4611,
-   "mean distance": 0.869,
-   "sqrt(d/6)": 0.9129
+   "median d_max": 1.4611
   },
   {
    "d": 10,
    "median ratio": 2.9247,
    "median d_min": 0.4952,
-   "median d_max": 1.8944,
-   "mean distance": 1.2521,
-   "sqrt(d/6)": 1.291
+   "median d_max": 1.8944
   },
   {
    "d": 20,
    "median ratio": 1.3732,
    "median d_min": 1.0249,
-   "median d_max": 2.4538,
-   "mean distance": 1.8095,
-   "sqrt(d/6)": 1.8257
+   "median d_max": 2.4538
   },
   {
    "d": 50,
    "median ratio": 0.6664,
    "median d_min": 2.1258,
-   "median d_max": 3.5516,
-   "mean distance": 2.877,
-   "sqrt(d/6)": 2.8868
+   "median d_max": 3.5516
   },
   {
    "d": 100,
    "median ratio": 0.4312,
    "median d_min": 3.3278,
-   "median d_max": 4.7697,
-   "mean distance": 4.0813,
-   "sqrt(d/6)": 4.0825
+   "median d_max": 4.7697
   },
   {
    "d": 500,
    "median ratio": 0.1716,
    "median d_min": 8.4204,
-   "median d_max": 9.8464,
-   "mean distance": 9.1363,
-   "sqrt(d/6)": 9.1287
+   "median d_max": 9.8464
   },
   {
    "d": 1000,
    "median ratio": 0.1187,
    "median d_min": 12.1865,
-   "median d_max": 13.6201,
-   "mean distance": 12.8941,
-   "sqrt(d/6)": 12.9099
+   "median d_max": 13.6201
   }
  ],
  "q2c": [
